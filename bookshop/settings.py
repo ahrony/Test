@@ -107,7 +107,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-MEDIA_ROOT = '/home/saju/bookshop/media/'#for photo upload
+MEDIA_ROOT = 'users/home/saju/bookshop/media/'#for photo upload
 
 MEDIA_URL = '/media/'#for photo upload
 
