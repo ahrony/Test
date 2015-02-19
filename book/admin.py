@@ -8,7 +8,7 @@ from django.contrib import admin
 from django.contrib.auth.models import User
 
 from django.contrib.auth.admin import UserAdmin 
-from book.models import UserProfile
+from book.models import UserProfile,Catagory,Product,Cart
  
 class UserProfileInline(admin.StackedInline):
     """ As you are noticed your profile will be edited as inline form """
@@ -23,4 +23,8 @@ class UserAdmin(UserAdmin):
 
     admin.site.unregister(User)
 
+    admin.site.register(UserProfile)
+    admin.site.register(Catagory)
+    admin.site.register(Product)
+    admin.site.register(Cart)
     admin.site.register(User, UserAdmin)
